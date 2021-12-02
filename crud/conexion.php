@@ -1,6 +1,6 @@
 <?php
 function conectar(){
-    $host="crud-php";
+    $host="localhost";
     $user="root";
     $pass="root";
 
