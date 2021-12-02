@@ -1,14 +1,12 @@
 <?php
 function conectar(){
-    $host="localhost";
+    $host="crud-php";
     $user="root";
     $pass="root";
 
     $bd="crud";
 
-    $con=mysqli_connect($host,$user,$pass);
-
-    mysqli_select_db($con,$bd);
+    $con=new mysqli($host,$user,$pass,$bd);
 
     return $con;
 }
